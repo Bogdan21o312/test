@@ -1,0 +1,3 @@
+Company -> Group -> Agents -> Ticket -> Contact
+
+В Company є Group в яких є  Agents які створюють Ticket та відправляють їх Contact

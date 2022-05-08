@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+
+  nginx:
+    build: './docker/nginx'
+    container_name: docker-compose-nginx
+    ports:
+      - '8080:80'
+
+  php:
+    build: './docker/php'
+    environment:
+      XDEBUG_CONFIG: "remote_host=host.docker.internal."
+    ports:
+      - '7070:70'
+
